@@ -28,10 +28,10 @@ public class Question {
     @Column(updatable = false)
     private LocalDateTime createDate;
 
-    @OneToMany(mappedBy = "question", cascade = CascadeType.REMOVE) //질문과 답변은 1:N관계
-    //질문을 삭제하면 그에 달린 답변들도 함께 삭제되게
-    private List<Answer> answerList;//question하나에 answer는 여러개니까
-    //question엔티티에 답변 참조하려면 답변의 속성 List로 구성하기
+//    @OneToMany(mappedBy = "question", cascade = CascadeType.REMOVE) //질문과 답변은 1:N관계
+//    //질문을 삭제하면 그에 달린 답변들도 함께 삭제되게
+//    private List<Answer> answerList;//question하나에 answer는 여러개니까
+//    //question엔티티에 답변 참조하려면 답변의 속성 List로 구성하기
 
     @Builder
     public Question(Integer id, String subject, String content, LocalDateTime createDate, List<Answer> answerList){
