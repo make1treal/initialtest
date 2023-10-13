@@ -33,14 +33,14 @@ public class Question {
 //    private List<Answer> answerList;//question하나에 answer는 여러개니까
 //    //question엔티티에 답변 참조하려면 답변의 속성 List로 구성하기
 
-    @Builder
-    public Question(Integer id, String subject, String content, LocalDateTime createDate, List<Answer> answerList){
-        this.id = id;
-        this.subject = subject;
-        this.content = content;
-        this.createDate = createDate;
-        this.answerList = answerList;
-    }
+//    @Builder
+//    public Question(Integer id, String subject, String content, LocalDateTime createDate, List<Answer> answerList){
+//        this.id = id;
+//        this.subject = subject;
+//        this.content = content;
+//        this.createDate = createDate;
+//        this.answerList = answerList;
+//    }
 }
 
 
